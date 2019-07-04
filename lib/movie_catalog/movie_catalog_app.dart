@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'models.dart';
+import 'package:hacknight_example/movie_catalog/model/mocked_data.dart';
+import 'package:hacknight_example/movie_catalog/movie_item.dart';
 
 /// Task1:
 /// Create a [ListView] and display a list of [MovieItem]s.
@@ -32,28 +32,17 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Container();
-  }
-}
-
-class MovieItem extends StatelessWidget {
-  final Movie movie;
-
-  MovieItem({@required this.movie});
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      leading: Container(
-        width: 40,
-        height: 40,
+    return Scaffold(
+      body: ListView.builder(
+        itemCount: mockedMovies.length,
+        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 48),
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: EdgeInsets.only(bottom: 16),
+            child: MovieItem(movie: mockedMovies[index]),
+          );
+        },
       ),
-      title: Text(movie.title),
-      trailing: IconButton(
-          icon: Icon(Icons.star),
-          onPressed: () {
-            /*Navigate to page*/
-          }),
     );
   }
 }

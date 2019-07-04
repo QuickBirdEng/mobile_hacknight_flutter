@@ -1,19 +1,20 @@
-import 'package:hacknight_example/movie_catalog/models.dart';
+import 'package:hacknight_example/movie_catalog/model/models.dart';
 
 // -----
 // Movies
 // -----
 
 final inception = Movie(
-  title: "Inception",
+  title: "Inception [3D]",
   description:
       "Inception is a 2010 science fiction action film[3] written, co-produced, and directed by Christopher Nolan, and co-produced by Emma Thomas. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious, and is offered a chance to have his criminal history erased as payment for the implantation of another person's idea into a target's subconscious.[4] The ensemble cast additionally includes Ken Watanabe, Joseph Gordon-Levitt, Marion Cotillard, Ellen Page, Tom Hardy, Dileep Rao, Cillian Murphy, Tom Berenger, and Michael Caine.",
   releaseDate: DateTime(2010, 6, 11),
   imageUrl:
-      "https://en.wikipedia.org/wiki/File:Inception_(2010)_theatrical_poster.jpg",
+      "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
   trailerUrl: "https://www.youtube.com/watch?v=8hP9D6kZseM",
+  ticketPrice: 9.99,
   actors: [leonardoDiCaprio, kenWatanabe, josephGordonLevitt],
-  reviews: [reviewSebi, reviewStefan, reviewMalte, reviewKlaus],
+  reviews: [reviewSebi, reviewStefan, reviewMalte, reviewJulian],
 );
 
 final menInBlack = Movie(
@@ -22,8 +23,9 @@ final menInBlack = Movie(
       "Men in Black: International (stylized as MIB: International in promotional material) is a 2019 American science fiction action comedy film directed by F. Gary Gray and written by Art Marcum and Matt Holloway. It is a spin-off of the Men in Black film series, which is loosely based on the Malibu/Marvel comics of the same name by Lowell Cunningham. The film stars Chris Hemsworth, Tessa Thompson, Kumail Nanjiani, Rebecca Ferguson, Rafe Spall, Laurent and Larry Bourgeois, and Liam Neeson. Emma Thompson reprises her role from the third film, while Tim Blaney returns to voice Frank the Pug from the first two installments.",
   releaseDate: DateTime(2019, 5, 17),
   imageUrl:
-      "https://en.wikipedia.org/wiki/File:Men_in_Black_International_(Official_Film_Poster).png",
+      "https://upload.wikimedia.org/wikipedia/en/1/1b/Men_in_Black_International_%28Official_Film_Poster%29.png",
   trailerUrl: "https://www.youtube.com/watch?v=BV-WEb2oxLk",
+  ticketPrice: 5.19,
   actors: [chrisHemsworth, tessaThompson, rebeccaFerguson],
   reviews: [reviewNasir, reviewJulian, reviewNiko, reviewKlaus],
 );
@@ -131,7 +133,7 @@ final reviewStefan =
 
 final reviewSebi = Review(
   author: sebi,
-  score: 5,
+  score: 4.2,
   description: "Watched with a hoibe mass 🍺, after that, best movie ever! ",
 );
 
@@ -151,11 +153,11 @@ final reviewNiko = Review(
 final reviewJulian = Review(
   author: julian,
   score: 5.0,
-  description: "LGTM",
+  description: "Lit 🔥🔥🔥",
 );
 
 final reviewKlaus = Review(
   author: julian,
   score: 2.2,
-  description: "Didn't enjoyed it.",
+  description: "Didn't enjoyed it. Boring. 😫",
 );

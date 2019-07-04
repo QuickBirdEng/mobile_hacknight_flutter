@@ -10,6 +10,7 @@ class Movie {
   final String trailerUrl;
   final List<Actor> actors;
   final List<Review> reviews;
+  final double ticketPrice;
 
   Movie({
     @required this.title,
@@ -19,6 +20,7 @@ class Movie {
     @required this.trailerUrl,
     @required this.actors,
     @required this.reviews,
+    @required this.ticketPrice,
   });
 }
 
