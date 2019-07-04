@@ -9,9 +9,8 @@ class ReviewSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 40,
-      width: 40,
-      color: Colors.green,
+      alignment: Alignment.center,
+      child: Text("Review"),
     );
   }
 }

@@ -9,6 +9,9 @@ class InfoSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(color: Colors.red);
+    return Container(
+      alignment: Alignment.center,
+      child: Text("Info"),
+    );
   }
 }

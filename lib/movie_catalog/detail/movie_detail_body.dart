@@ -23,6 +23,7 @@ class _MovieDetailBodyState extends State<MovieDetailBody> {
     return Container(
       color: Colors.white,
       width: double.infinity,
+      height: 900,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,

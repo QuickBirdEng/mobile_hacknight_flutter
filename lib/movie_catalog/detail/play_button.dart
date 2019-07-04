@@ -14,8 +14,8 @@ class PlayButton extends StatelessWidget {
       RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.zero)),
       child: InkWell(
           child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 20),
-            child: Icon(Icons.play_arrow, color: Colors.white),
+            padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 16),
+            child: Icon(Icons.play_arrow, color: Colors.white, size: 30),
           )),
     );
   }

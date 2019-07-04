@@ -9,7 +9,8 @@ class ActorSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.blueGrey,
+      alignment: Alignment.center,
+      child: Text("Actors"),
     );
   }
 }
