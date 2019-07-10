@@ -8,10 +8,12 @@ class DemoApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Container(
-          width: double.infinity,
-          height: double.infinity,
-          child: BirdFlyGame(),
+        body: SafeArea(
+          child: Container(
+            width: double.infinity,
+            height: double.infinity,
+            child: BirdFlyGame(),
+          ),
         ),
       ),
     );
@@ -67,8 +69,8 @@ class HackNightTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Flexible(
       child: Text(
-        "Quickbird HackNight",
-        style: Theme.of(context).textTheme.title.copyWith(fontSize: 32),
+        "QuickBird HackNight",
+        style: TextStyle(fontSize: 48),
         textAlign: TextAlign.center,
       ),
     );

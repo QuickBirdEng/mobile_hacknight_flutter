@@ -5,7 +5,7 @@ import 'package:hacknight_example/movie_catalog/model/models.dart';
 import 'movie_detail_body.dart';
 
 const _topPadding = 164.0;
-const detailPageSpacing = 36.0;
+const detailPageSpacing = 28.0;
 
 class MovieDetailPage extends StatefulWidget {
   final Movie movie;

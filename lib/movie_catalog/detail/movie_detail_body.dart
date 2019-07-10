@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:hacknight_example/movie_catalog/detail/sections/actor_section.dart';
 import 'package:hacknight_example/movie_catalog/detail/sections/info_section.dart';
 import 'package:hacknight_example/movie_catalog/detail/sections/review_section.dart';
 import 'package:hacknight_example/movie_catalog/model/models.dart';
 
-import 'package:hacknight_example/movie_catalog/detail/sections/actor_section.dart';
 import 'movie_detail_page.dart';
 
 class MovieDetailBody extends StatefulWidget {
@@ -20,33 +20,34 @@ class _MovieDetailBodyState extends State<MovieDetailBody> {
   Widget build(BuildContext context) {
     final movie = widget.movie;
 
-    return Container(
-      color: Colors.white,
-      width: double.infinity,
-      height: 900,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(
-            movie.title,
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
-          ),
-          SizedBox(height: detailPageSpacing),
-          Text(
-            movie.description,
-            style: Theme.of(context)
-                .textTheme
-                .subtitle
-                .copyWith(color: Colors.black54),
-            maxLines: 6,
-            overflow: TextOverflow.fade,
-          ),
-          SizedBox(height: detailPageSpacing),
-          _buildInfoTabBar(),
-        ],
+    return IntrinsicHeight(
+      child: Container(
+        color: Colors.white,
+        width: double.infinity,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              movie.title,
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+            ),
+            SizedBox(height: detailPageSpacing),
+            Text(
+              movie.description,
+              style: Theme.of(context)
+                  .textTheme
+                  .subtitle
+                  .copyWith(color: Colors.black54),
+              maxLines: 6,
+              overflow: TextOverflow.fade,
+            ),
+            SizedBox(height: detailPageSpacing),
+            _buildInfoTabBar(),
+          ],
+        ),
+        padding: EdgeInsets.all(detailPageSpacing),
       ),
-      padding: EdgeInsets.all(detailPageSpacing),
     );
   }
 
@@ -77,7 +78,7 @@ class _MovieDetailBodyState extends State<MovieDetailBody> {
             ],
           ),
           Container(
-            height: 300,
+            height: MediaQuery.of(context).size.height,
             child: TabBarView(
               children: [
                 ReviewSection(reviews: widget.movie.reviews),

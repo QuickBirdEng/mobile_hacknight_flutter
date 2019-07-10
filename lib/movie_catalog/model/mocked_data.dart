@@ -14,7 +14,7 @@ final inception = Movie(
   trailerUrl: "https://www.youtube.com/watch?v=8hP9D6kZseM",
   ticketPrice: 9.99,
   actors: [leonardoDiCaprio, kenWatanabe, josephGordonLevitt],
-  reviews: [reviewSebi, reviewStefan, reviewMalte, reviewJulian],
+  reviews: [reviewStefan, reviewSebi, reviewMalte, reviewJulian],
 );
 
 final menInBlack = Movie(
@@ -124,24 +124,28 @@ final klaus = User(
 
 final reviewMalte = Review(
   author: malte,
-  score: 0.8,
-  description: "Doesn't add any value",
+  score: 4.8,
+  description:
+      "This emotional, thrilling and powerfull film put in our brains that very simple mind-blowing idea.",
 );
 
-final reviewStefan =
-    Review(author: stefan, score: 4.2, description: "Would recommend");
+final reviewStefan = Review(
+    author: stefan,
+    score: 1.1,
+    description:
+        "Funny how people think complex equals smart and intellectual. This movie was a big bag of hot wind.");
 
 final reviewSebi = Review(
   author: sebi,
   score: 4.2,
-  description: "Watched with a hoibe mass 🍺, after that, best movie ever! ",
+  description: "Watched with a hoibe mass 🍺, after that best movie ever! ",
 );
 
 final reviewNasir = Review(
   author: nasir,
   score: 0.1,
   description:
-      "The movie was in german! Cmon! Subtitles are there for a reason!",
+      "The movie was in german! Cmon! Subtitles are there for a reeeason!",
 );
 
 final reviewNiko = Review(
@@ -153,7 +157,7 @@ final reviewNiko = Review(
 final reviewJulian = Review(
   author: julian,
   score: 5.0,
-  description: "Lit 🔥🔥🔥",
+  description: "Good movie, lit 🔥🔥🔥",
 );
 
 final reviewKlaus = Review(
