@@ -49,7 +49,6 @@ class ReviewItem extends StatelessWidget {
               style: Theme.of(context).textTheme.body1,
             ),
           ),
-          //Text("${review.score}")
         ],
       ),
     );
