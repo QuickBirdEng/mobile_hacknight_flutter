@@ -5,6 +5,7 @@ import 'package:hacknight_example/movie_catalog/movie_catalog_app.dart';
 import 'package:hacknight_example/movie_catalog/movie_item.dart';
 
 /// Task1:
+/// - Open [MovieCatalogApp] in movie_catalog_app.dart.
 /// - Create a [ListView] and display a list of [MovieItem]s.
 /// - Adjust the style of the list items in the [MovieItem] class.
 ///
@@ -27,11 +28,14 @@ import 'package:hacknight_example/movie_catalog/movie_item.dart';
 ///
 
 /// Task2:
+/// - Open [MovieItem] in movie_item.dart
 /// - Use [Navigator.push] to route to the [MovieDetailPage].
 ///
 ///
 ///
 /// Hints:
+///
+/// Use [InkWell] or [GestureDetector] to listen for click events.
 ///
 /// Create a [MaterialPageRoute] that returns the
 /// instance of [MovieDetailPage] in its builder function.
@@ -40,6 +44,7 @@ import 'package:hacknight_example/movie_catalog/movie_item.dart';
 /// MaterialPageRoute(builder: (context) => MovieDetailPage(movie: clickedMovie));
 
 /// Task3:
+/// - Open [MovieDetailPage] in movie_detail_page.dart.
 /// - Display the information of a [Movie] in the existing [MovieDetailPage] class.
 ///
 ///
@@ -51,8 +56,7 @@ import 'package:hacknight_example/movie_catalog/movie_item.dart';
 ///
 ///
 /// Task4:
-/// Adjust Design accordingly to the design found in
-/// https://dribbble.com/shots/5352058-Movie-Application/attachments
+/// - Adjust Design accordingly to the design found in (https://dribbble.com/shots/5352058-Movie-Application/attachments)
 ///
 ///
 /// Hints:
