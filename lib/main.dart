@@ -54,7 +54,7 @@ import 'package:hacknight_example/movie_catalog/movie_item.dart';
 /// You create a simple page skeleton by using a [Scaffold].
 /// Try setting [Scaffold.body] or [Scaffold.appBar] (use [AppBar] for that).
 ///
-///
+
 /// Task4:
 /// - Adjust Design accordingly to the design found in (https://dribbble.com/shots/5352058-Movie-Application/attachments)
 ///
